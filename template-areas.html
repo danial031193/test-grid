@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas: "header header"
+                       "sidebar content"
+                       "sidebar content";
+            grid-template-columns: 150px 1fr;
+            grid-template-rows: 50px 1fr 50px;
+        }
+
+        header {
+            grid-area: header;
+            background: #e7a158;
+        }
+
+        aside {
+            grid-area: sidebar;
+            background: #ee6375;
+        }
+
+        main {
+            grid-area: content;
+            background: aquamarine;
+        }
+    </style>
+</head>
+<body>
+<div class="grid-container">
+    <header>Header</header>
+    <aside>Aside</aside>
+    <main>Main</main>
+</div>
+</body>
+</html>
